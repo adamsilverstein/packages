@@ -26,7 +26,9 @@
   "scripts": {
     "build-clean": "rimraf ./packages/*/build ./packages/*/build-module",
     "build": "node ./scripts/build.js",
-    "build-modules": "webpack --progress -p",
+    "build-wp": "webpack --progress -p",
+    "build-wp-dev": "webpack -d --progress",
+    "build-wp-dev:watch": "webpack -d -w --progress",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "test:coverage-ci": "jest --coverage && codecov",
