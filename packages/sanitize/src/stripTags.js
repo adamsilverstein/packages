@@ -5,7 +5,7 @@
  *
  * @return  Text free of HTML.
  */
-export function stripTags( text ) {
+export const stripTags = function stripTags( text ) {
 	text = text || '';
 
 	return text
