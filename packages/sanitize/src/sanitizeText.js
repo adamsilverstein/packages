@@ -1,5 +1,8 @@
 import stripTags from './stripTags';
 
+// Create a reusable text area.
+var textarea = document.createElement( 'textarea' );
+
 /**
  * Make a string safe for rendering.
  *
@@ -10,8 +13,7 @@ import stripTags from './stripTags';
  * @return Sanitized text. False on failure.
  */
 export function sanitizeText( text ) {
-	var _text = wp.utils.stripTags( text ),
-		textarea = document.createElement( 'textarea' );
+	var _text = wp.utils.stripTags( text );
 
 	try {
 		textarea.innerHTML = _text;
@@ -20,3 +22,4 @@ export function sanitizeText( text ) {
 
 	return _text;
 }
+
