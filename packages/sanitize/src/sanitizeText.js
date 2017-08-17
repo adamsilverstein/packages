@@ -1,7 +1,9 @@
 import stripTags from './stripTags';
 
 /**
- * Strip HTML tags and convert HTML entities.
+ * Make a string safe for rendering.
+ *
+ * Remove all HTML tags from a string and convert HTML special characters to their entity equivalents.
  *
  * @param {string} text Text to strip tags and convert HTML entities.
  *

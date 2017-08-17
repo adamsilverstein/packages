@@ -1,9 +1,9 @@
 /**
- * Strip HTML tags.
+ * Remove all HTML tags from string.
  *
  * @param {string} text Text to have the HTML tags striped out of.
  *
- * @return  Stripped text.
+ * @return  Text free of HTML.
  */
 export function stripTags( text ) {
 	text = text || '';
