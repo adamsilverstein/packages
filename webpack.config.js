@@ -2,6 +2,7 @@ const entryPointNames = [
 	'url',
 	'a11y',
 	'dom-ready',
+	'hooks',
 ];
 
 const externals = {
