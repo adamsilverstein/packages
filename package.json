@@ -2,6 +2,7 @@
   "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.5.2",
     "chalk": "^2.0.1",
     "codecov": "^2.2.0",
@@ -9,7 +10,9 @@
     "jest": "^20.0.4",
     "lerna": "^2.0.0",
     "mkdirp": "^0.5.1",
-    "rimraf": "^2.6.1"
+    "rimraf": "^2.6.1",
+    "webpack": "^3.3.0",
+    "babel-loader": "^7.1.1"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -23,6 +26,7 @@
   "scripts": {
     "build-clean": "rimraf ./packages/*/build ./packages/*/build-module",
     "build": "node ./scripts/build.js",
+    "build-modules": "webpack --progress -p",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "test:coverage-ci": "jest --coverage && codecov",
