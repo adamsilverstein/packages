@@ -1,7 +1,7 @@
 /**
  * Remove all HTML tags from string.
  *
- * @param {string} text Text to have the HTML tags striped out of.
+ * @param {string} text Text to have the HTML tags stripped out of.
  *
  * @return  Text free of HTML.
  */
