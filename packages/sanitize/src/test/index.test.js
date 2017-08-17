@@ -1,7 +1,7 @@
 /**
  * Internal Dependencies
  */
-import { stripTags, sanitizeText } from '../';
+import { stripTags } from '../stripTags';
 
 describe( 'stripTags', () => {
 	test( 'should remove inline tag elements', () => {
